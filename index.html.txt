@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Flashcard App</title>
+  <title>Flashcard Quiz App</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -9,15 +9,23 @@
 <h1>Flashcard Quiz App</h1>
 
 <div class="card">
-  <p id="question">Question will appear here</p>
-  <p id="answer" style="display:none;">Answer here</p>
+  <p id="question"></p>
+  <p id="answer"></p>
 </div>
 
 <button onclick="showAnswer()">Show Answer</button>
+
 <br><br>
+
 <button onclick="prevCard()">Previous</button>
 <button onclick="nextCard()">Next</button>
 
+<br><br>
+
+<button onclick="addCard()">Add Card</button>
+<button onclick="deleteCard()">Delete Card</button>
+
 <script src="script.js"></script>
+
 </body>
 </html>
