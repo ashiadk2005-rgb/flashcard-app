@@ -1,0 +1,29 @@
+let flashcards = [
+  {question: "What is HTML?", answer: "HyperText Markup Language"},
+  {question: "What is CSS?", answer: "Style sheet language"},
+  {question: "What is JS?", answer: "JavaScript programming language"}
+];
+
+let index = 0;
+
+function loadCard() {
+  document.getElementById("question").innerText = flashcards[index].question;
+  document.getElementById("answer").innerText = flashcards[index].answer;
+  document.getElementById("answer").style.display = "none";
+}
+
+function showAnswer() {
+  document.getElementById("answer").style.display = "block";
+}
+
+function nextCard() {
+  index = (index + 1) % flashcards.length;
+  loadCard();
+}
+
+function prevCard() {
+  index = (index - 1 + flashcards.length) % flashcards.length;
+  loadCard();
+}
+
+loadCard();

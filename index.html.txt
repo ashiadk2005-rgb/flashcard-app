@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flashcard App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Flashcard Quiz App</h1>
+
+<div class="card">
+  <p id="question">Question will appear here</p>
+  <p id="answer" style="display:none;">Answer here</p>
+</div>
+
+<button onclick="showAnswer()">Show Answer</button>
+<br><br>
+<button onclick="prevCard()">Previous</button>
+<button onclick="nextCard()">Next</button>
+
+<script src="script.js"></script>
+</body>
+</html>
